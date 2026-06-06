@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Zuriel Alice Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwindConfig.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="homeStyle.css">
+</head>
+
+<body class="bg-white text-gray-800 overflow-x-hidden">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-full gradient-pink flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+            <!-- <span class="text-white font-bold text-lg font-playfair">ZAF</span> -->
+            <img src="../../Media/HomePage/The Zuriel-Alice Foundation logo.png" alt="The Zuriel-Alice Foundation Logo">
+          </div>
+          <div>
+            <span class="text-xl font-bold font-playfair nav-title text-white transition-colors">The Zuriel-Alice Foundation</span>
+            <p class="text-[10px] uppercase tracking-[3px] nav-subtitle text-pink-200 transition-colors">Empowering Lives</p>
+          </div>
+        </a>
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="#home" class="nav-link text-sm font-medium nav-menu-link text-white transition-colors">Home</a>
+          <a href="#credo" class="nav-link text-sm font-medium nav-menu-link text-white transition-colors">Credo</a>
+          <a href="#biography" class="nav-link text-sm font-medium nav-menu-link text-white transition-colors">Biography</a>
+          <a href="#goals" class="nav-link text-sm font-medium nav-menu-link text-white transition-colors">Goals</a>
+          <a href="#programs" class="nav-link text-sm font-medium nav-menu-link text-white transition-colors">Programs</a>
+          <a href="#news" class="nav-link text-sm font-medium nav-menu-link text-white transition-colors">News</a>
+          <a href="#tributes" class="nav-link text-sm font-medium nav-menu-link text-white transition-colors">Tributes</a>
+          <a href="#contact" class="nav-link text-sm font-medium nav-menu-link text-white transition-colors">Contact</a>
+          <a href="#donate" class="bg-white text-pink-600 px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-pink-50 transition-all shadow-lg hover:shadow-xl">Donate</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="lg:hidden text-white hover:text-pink-200 transition-colors">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white shadow-2xl border-t border-pink-100">
+      <div class="px-4 py-6 space-y-4">
+        <a href="#home" class="block text-gray-700 hover:text-pink-600 font-medium transition-colors mobile-link">Home</a>
+        <a href="#credo" class="block text-gray-700 hover:text-pink-600 font-medium transition-colors mobile-link">Credo</a>
+        <a href="#biography" class="block text-gray-700 hover:text-pink-600 font-medium transition-colors mobile-link">Biography</a>
+        <a href="#goals" class="block text-gray-700 hover:text-pink-600 font-medium transition-colors mobile-link">Goals</a>
+        <a href="#programs" class="block text-gray-700 hover:text-pink-600 font-medium transition-colors mobile-link">Programs</a>
+        <a href="#news" class="block text-gray-700 hover:text-pink-600 font-medium transition-colors mobile-link">News</a>
+        <a href="#tributes" class="block text-gray-700 hover:text-pink-600 font-medium transition-colors mobile-link">Tributes</a>
+        <a href="#contact" class="block text-gray-700 hover:text-pink-600 font-medium transition-colors mobile-link">Contact</a>
+        <a href="#donate" class="block gradient-pink text-white text-center px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">Donate Now</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- Hero Section -->
+  <section id="home" class="relative min-h-screen flex items-center">
+    <div class="absolute inset-0">
+      <img src="../../Media/HomePage/pink feather background.jpg" alt="Children smiling" class="w-full h-full object-cover">
+      <div class="absolute inset-0 gradient-pink-hero"></div>
+      <div class="absolute inset-0 bg-black/20"></div>
+    </div>
+    <!-- Decorative elements -->
+    <div class="absolute top-20 right-10 w-72 h-72 bg-pink-300/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 left-10 w-96 h-96 bg-pink-400/10 rounded-full blur-3xl"></div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full mb-8">
+          <span class="w-2 h-2 rounded-full bg-pink-300 pulse-dot"></span>
+          <span class="text-pink-100 text-sm font-medium">Making a difference since 2025</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold font-playfair text-white leading-tight mb-6">
+          The <span class="text-pink-200">Zuriel-Alice</span> Foundation
+        </h1>
+        <p class="text-lg sm:text-xl text-pink-100 mb-10 max-w-xl leading-relaxed">
+          We empower and equip young drivers with the necessary knowledge and skills to drive
+          safely, reduce accidents, and cultivate lifelong healthy habits, one young driver at a time.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#programs" class="bg-white text-pink-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-pink-50 transition-all shadow-xl hover:shadow-2xl hover:scale-105 transform">
+            Our Programs
+          </a>
+          <a href="#about" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-pink-700 transition-all">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60">
+      <span class="text-xs uppercase tracking-widest">Scroll</span>
+      <div class="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center pt-2">
+        <div class="w-1 h-3 bg-white/60 rounded-full animate-bounce"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Credo -->
+  <section id="credo" class="py-24 bg-gradient-to-b from-pink-100 to-pink-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-up">
+        <!-- <span class="text-pink-500 font-semibold text-sm uppercase tracking-widest">Testimonials</span> -->
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-playfair text-gray-900 mt-4">
+          <span class="text-gradient">Our Credo</span>
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-4 gap-8">
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-50 fade-up">
+          <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="target" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-2xl font-bold font-playfair text-gray-900 mb-4">We Value Life</h3>
+          <p class="text-gray-600 leading-relaxed">
+            We believe in the immeasurable worth and longevity of every life. 
+            <br><br>
+            Our commitment is to protect and preserve the lives of young drivers through comprehensive education and proactive measures.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-50 fade-up" style="transition-delay: 0.1s">
+          <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="eye" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-2xl font-bold font-playfair text-gray-900 mb-4">We Drive Safely</h3>
+          <p class="text-gray-600 leading-relaxed">
+            We empower young people with the knowledge, skills, and habits necessary for safe driving.  
+            <br><br>
+            Our goal is to reduce accidents and foster a culture of responsibility and mindfulness on the roads.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-50 fade-up" style="transition-delay: 0.2s">
+          <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="sparkles" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-2xl font-bold font-playfair text-gray-900 mb-4">We Celebrate Legacies</h3>
+          <p class="text-gray-600 leading-relaxed">
+            We honor and celebrate the light and legacy of our loved ones who have made a positive impact in our communities.
+            <br><br>
+            We encourage families to cherish and uphold these legacies, reinforcing the importance of safe driving for the sake of those we love.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-50 fade-up" style="transition-delay: 0.2s">
+          <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="sparkles" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-2xl font-bold font-playfair text-gray-900 mb-4">We Engage the Community</h3>
+          <p class="text-gray-600 leading-relaxed">
+            We strive to make our roads safer for everyone through education, advocacy, and community involvement.
+            <br><br>
+            We believe that a collective effort is essential to achieving lasting change.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Biography Section -->
+  <section id="biography" class="py-24 lg:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- 1. Removed grid container to allow natural text wrapping -->
+        <div class="fade-up clearfix"> 
+            
+            <!-- 2. Added float-left and responsive widths/margins to the photo wrapper -->
+            <div class="relative float-left mr-8 mb-8 w-full sm:w-[400px] lg:w-[450px]">
+            <div class="relative">
+                <img src="../../Media/HomePage/Main photo of Ema.jpg" class="rounded-2xl shadow-2xl w-full h-auto">
+                <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 flex items-center gap-4">
+                <div class="w-14 h-14 gradient-pink rounded-full flex items-center justify-center">
+                    <i data-lucide="heart" class="w-7 h-7 text-white"></i>
+                </div>
+                <div>
+                    <!-- <p class="text-2xl font-bold text-pink-600 font-playfair">9+</p> -->
+                    <p class="text-sm text-gray-500">2003-2024</p>
+                </div>
+                </div>
+            </div>
+            <div class="absolute -top-6 -left-6 w-24 h-24 bg-pink-100 rounded-2xl -z-10"></div>
+            </div>
+
+            <!-- 3. The heading and text sit in the main flow next to the floated element -->
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-playfair text-gray-900 mt-4 mb-6">
+            <span class="text-gradient">Biography</span>
+            </h2>
+            
+            <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            On May 6th, 2003, God molded into being a precious little angel. He breathed life into
+            her tiny lungs and out cried our joyous princess. Behold onto the family of Chief Walter
+            Ngome and Judith Ebwe Ngome, a little princess—Zuriel-Alice Emambo Ngome, was
+            born. Ema, as she is typically referred to; was special at birth and named after her
+            maternal grandmother Alice Emambo—daughter of a chief in Ekosse land. Thus, a
+            piece of divinity was fashioned through a regal bloodline to become a vessel of
+            compassion, grace, grit, and love.
+            <br><br>
+            Ema began her elementary school journey in Marlton Elementary School, Upper
+            Marlboro and would transfer to the Barack Obama elementary school, Upper Marlboro,
+            MD where she quickly captivated the attention of her teachers as one of the brightest
+            that ever graced their campus.  She was an honor roll student throughout and in 2013,
+            she became a Black Saga finalist—an award-wining competition sponsored by the
+            Center for Geographic Education at the University of Maryland Baltimore County and
+            the Black Saga Foundation— where she displayed her extensive knowledge on key
+            social studies issues including how she perceived her own experiences in connection
+            to the past, the larger human existence and experience through time. 
+            <br><br>
+            Upon her move to Atlanta, GA, she attended McGarity Elementary school where she
+            consistently excelled in multiple areas and maintained not merely her aptitude of
+            expression but her charm, zest, and joy of life. 
+            <br><br>
+            She later attended PB Ritch Middle school, where her star continued to shine in
+            academia and other extracurricular activities. During this time, she played clarinet in the
+            middle school’s band, as well as joined Paulding gymnastics, where she excelled and
+            received an award in 2014. Ema also wrote prolifically on a range of social issues
+            including problems faced by teen girls. Following graduation from middle school, Ema
+            attended East Paulding High School in 2018, where she’d again go on to capture the
+            hearts of her teachers and peers.  
+            <br><br>
+            As a natural born leader and role model, Ema was elected as a member of the National
+            Beta club in November of 2018, due to her outstanding character, leadership and
+            academic achievement. Her confidence was admirable, her optimism was palpable and
+            like a diamond in the rough, her brilliance emerged through her vibrant spirit. Ema’s love
+            for music and dance was unparalleled. Following her enrollment at the CK DanceWorks
+            in Dallas, GA, she was awarded the ‘Most Improved’ award throughout the years in
+            2016, 2017 and 2018. Her confidence was admirable, her optimism was palpable and
+            like a diamond in the rough, her brilliance emerged through her vibrant spirit. 
+            <br><br>
+            Ema’s love for music and dance was unparalleled. Following her enrollment at the CK
+            DanceWorks in Dallas, GA, she was awarded the ‘Most Improved’ award throughout
+            the years in 2016, 2017 and 2018. But gymnastics didn’t stop in elementary school nor
+            did her development and growth into a dance icon. Whenever Ema stepped on the
+            dance floor, she dazzled everyone as she moved with class, rhythm, style, and gusto.
+            <br><br>
+            In 2019, Ema was inducted into the Junior varsity basketball cheerleader organization
+            and later that year she won Junior varsity basketball cheerleader of the year award
+            (2019-2020). Due to her exemplary performance, she earned an award into the Varsity
+            Basketball Cheer Squad in 2020 (for the 2020—2021 season), as well as earned the
+            captain’s award. 
+            <br><br>
+            While continuing at the top of her class, she was able to blend the best of both
+            cultures. As a progeny of noble descent, Ema was invested in her community and had
+            great reverence for her traditional and cultural events. Throughout the years when
+            ExSSA-USA hosted their annual International Impact Day event, Ema was an avid
+            volunteer with the goal to always leave a positive impact wherever she was assigned—
+            an imprint that lives on in the hearts and lives of her family and friends. 
+            <br><br>
+            Following her graduation from high school in 2021, Ema was admitted into Georgia
+            State University (GSU), where she was on the Dean’s list and an aspiring law student,
+            ready for admission into Princeton—a conviction in her possession since elementary
+            school. Ema exemplified an unstoppable courage, an unforgettable enthusiasm, and a
+            recognizable charisma shrouded in a cloak of humility. 
+            <br><br>
+            She embodied a profound faith and trust in God. Her journal titled "Faith Can Move
+            Mountains"—Matthew 17:20; abounds with optimism, an outpour of a yearning for God’s
+            heart and an unquenchable thirst to bathe in his grace, love, and blessings. Ema’s
+            reflections were penetrated with echoes so profound and proclamations so powerful
+            that even a statue would yearn to be engulfed in God’s presence. 
+            <br><br>
+            On her vision board, were inscribed the expressions, “All is working in my favor,
+            everything is working in my favor…I am blessed and highly favored…It's a new Era for
+            me...Blessed and highly favored...Everyone will know it was God." 
+            <br><br>
+            On March 16th, 2024 in the dark dewy hours of a cool spring morning, the angels
+            descended for reasons unknown. We can’t help but wonder if they hid you beneath
+            their wings or just simply gave you wings. As you transcend into the ethers, may the
+            angels of the Lord lead your way, and may the spirit of the most high keep you in the
+            palms of his hands, for you are now one with the divine. 
+            <br><br>
+            Oh Ema! You’re an angel in our midst, for you lived out the essence of your name—
+            Zuriel, meaning God is my rock!          
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Goals/Objectives -->
+  <section id="goals" class="py-24 bg-gradient-to-b from-pink-100 to-pink-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-up">
+        <!-- <span class="text-pink-500 font-semibold text-sm uppercase tracking-widest">Testimonials</span> -->
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-playfair text-gray-900 mt-4">
+          Our <span class="text-gradient">Goals</span> & Objectives
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-50 fade-up">
+          <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="target" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-2xl font-bold font-playfair text-gray-900 mb-4">Enhance Safe Driving Education</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Develop and implement a comprehensive safe driving curriculum for young drivers that includes both theoretical knowledge and practical skills.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-50 fade-up" style="transition-delay: 0.1s">
+          <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="eye" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-2xl font-bold font-playfair text-gray-900 mb-4">Reduce Traffic Accidents Among Young Drivers</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Partner with local schools, communities, and driving instructors to conduct workshops and campaigns aimed at reducing the number of accidents involving young drivers.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-50 fade-up" style="transition-delay: 0.2s">
+          <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="sparkles" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-2xl font-bold font-playfair text-gray-900 mb-4">Promote the Value and Longevity of Life</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Launch public awareness campaigns that emphasize the importance of safe driving and the impact it has on preserving life and health.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-50 fade-up" style="transition-delay: 0.2s">
+          <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="sparkles" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-2xl font-bold font-playfair text-gray-900 mb-4">Celebrate the Light and Legacy of Loved Ones</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Grieving with Gratitude: Create a meaningful and compassionate space where mourners can find gratitude amidst their sorrow, reflect on the joy, lessons, and inspiration their loved ones brought through shared stories, support circles, or creative expressions.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-50 fade-up" style="transition-delay: 0.2s">
+          <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="sparkles" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-2xl font-bold font-playfair text-gray-900 mb-4">Engage and Empower Communities</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Establish community outreach programs that involve local stakeholders to promote road safety, including interactive events, seminars, and volunteer opportunities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Programs Section -->
+  <section id="programs" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-up">
+        <span class="text-pink-500 font-semibold text-sm uppercase tracking-widest">What We Do</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-playfair text-gray-900 mt-4">
+          Our <span class="text-gradient">Programs</span> & Initiatives
+        </h2>
+        <p class="text-gray-500 text-lg mt-4 max-w-2xl mx-auto">We implement holistic programs that address the root causes of inequality and create lasting change in communities.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Program 1 -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg card-hover fade-up h-[420px]">
+          <img src="http://static.photos/education/640x360/15" alt="Girls Education Initiative" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <span class="inline-block bg-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Education</span>
+            <h3 class="text-xl font-bold text-white font-playfair mb-2">Girls Education Initiative</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">Providing scholarships, school supplies, and mentorship for girls in underserved communities to complete their education.</p>
+          </div>
+        </div>
+        <!-- Program 2 -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg card-hover fade-up h-[420px]" style="transition-delay: 0.1s">
+          <img src="http://static.photos/medical/640x360/23" alt="Maternal Health Program" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <span class="inline-block bg-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Healthcare</span>
+            <h3 class="text-xl font-bold text-white font-playfair mb-2">Maternal Health Program</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">Supporting mothers with prenatal care, safe delivery, and postnatal support to reduce maternal and infant mortality.</p>
+          </div>
+        </div>
+        <!-- Program 3 -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg card-hover fade-up h-[420px]" style="transition-delay: 0.2s">
+          <img src="http://static.photos/agriculture/640x360/17" alt="Women in Agriculture" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <span class="inline-block bg-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Economic Empowerment</span>
+            <h3 class="text-xl font-bold text-white font-playfair mb-2">Women in Agriculture</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">Training women in sustainable farming practices and connecting them to markets for economic independence.</p>
+          </div>
+        </div>
+        <!-- Program 4 -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg card-hover fade-up h-[420px]">
+          <img src="http://static.photos/wellness/640x360/30" alt="Community Health Outreaches" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <span class="inline-block bg-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Healthcare</span>
+            <h3 class="text-xl font-bold text-white font-playfair mb-2">Community Health Outreaches</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">Mobile clinics providing free health screenings, vaccinations, and health education in remote villages.</p>
+          </div>
+        </div>
+        <!-- Program 5 -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg card-hover fade-up h-[420px]" style="transition-delay: 0.1s">
+          <img src="http://static.photos/craft/640x360/12" alt="Skills Training Center" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <span class="inline-block bg-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Livelihoods</span>
+            <h3 class="text-xl font-bold text-white font-playfair mb-2">Skills Training Center</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">Vocational training in tailoring, digital skills, and entrepreneurship for women and youth empowerment.</p>
+          </div>
+        </div>
+        <!-- Program 6 -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg card-hover fade-up h-[420px]" style="transition-delay: 0.2s">
+          <img src="http://static.photos/nature/640x360/33" alt="Clean Water Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-6">
+            <span class="inline-block bg-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Infrastructure</span>
+            <h3 class="text-xl font-bold text-white font-playfair mb-2">Clean Water Project</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">Building wells and water purification systems to ensure communities have access to safe, clean drinking water.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Get Involved / Donate Section -->
+  <section id="donate" class="py-24 lg:py-32 bg-gradient-to-b from-pink-100 to-pink-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-up">
+        <span class="text-pink-500 font-semibold text-sm uppercase tracking-widest">Get Involved</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-playfair text-gray-900 mt-4">
+          Make a <span class="text-gradient">Difference</span> Today
+        </h2>
+        <p class="text-gray-500 text-lg mt-4 max-w-2xl mx-auto">Your support—whether through donations, volunteering, or spreading the word—helps us reach more communities.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Donate -->
+        <div class="bg-gradient-to-br from-pink-500 to-pink-700 rounded-2xl p-8 text-white card-hover fade-up relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-40 h-40 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+          
+          <div class="relative">
+            <div class="w-14 h-14 bg-white/15 rounded-xl flex items-center justify-center mb-6">
+              <i data-lucide="heart" class="w-7 h-7 text-white"></i>
+            </div>
+            
+            <h3 class="text-2xl font-bold font-playfair mb-4">Donate</h3>
+            <p class="text-pink-100 leading-relaxed mb-6">Every contribution, no matter the size, directly impacts lives. Your donation funds education, healthcare, and hope.</p>
+            
+            <form id="tailwindDonationForm" action="/your-donation-endpoint" method="POST">
+              <div class="space-y-3 mb-6">
+                <div class="flex gap-3">
+                  <button type="button" class="donate-amount flex-1 bg-white/15 hover:bg-white/25 py-2 rounded-lg font-semibold transition-all duration-200" data-amount="25">$25</button>
+                  <button type="button" class="donate-amount flex-1 bg-white/15 hover:bg-white/25 py-2 rounded-lg font-semibold transition-all duration-200" data-amount="50">$50</button>
+                  <button type="button" class="donate-amount flex-1 bg-white/25 hover:bg-white/35 py-2 rounded-lg font-semibold transition-all duration-200 ring-2 ring-white" data-amount="100">$100</button>
+                  <button type="button" class="donate-amount flex-1 bg-white/15 hover:bg-white/25 py-2 rounded-lg font-semibold transition-all duration-200" data-amount="250">$250</button>
+                </div>
+                
+                <div class="relative">
+                  <span class="absolute left-3 top-1/2 -translate-y-1/2 text-white/60">$</span>
+                  <input type="number" id="donationAmountInput" name="amount" min="1" placeholder="Custom amount" class="w-full bg-white/15 border border-white/20 rounded-lg py-2 pl-7 pr-3 text-white placeholder-white/50 focus:outline-none focus:border-white/50 transition-colors">
+                </div>
+              </div>
+              
+              <button type="submit" class="w-full block text-center bg-white text-pink-600 px-6 py-3 rounded-full font-semibold hover:bg-pink-50 transition-colors shadow-lg border-0 cursor-pointer">
+                Donate Now
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Volunteer -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-100 fade-up" style="transition-delay: 0.1s">
+          <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="hand-helping" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-2xl font-bold font-playfair text-gray-900 mb-4">Volunteer</h3>
+          <p class="text-gray-600 leading-relaxed mb-6">Join our global network of volunteers and make a hands-on difference in communities that need it most.</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-pink-500 flex-shrink-0"></i>
+              Teaching & mentoring
+            </li>
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-pink-500 flex-shrink-0"></i>
+              Medical outreach support
+            </li>
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-pink-500 flex-shrink-0"></i>
+              Community building projects
+            </li>
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-pink-500 flex-shrink-0"></i>
+              Fundraising & events
+            </li>
+          </ul>
+          <a href="#" class="block text-center gradient-pink text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity shadow-lg">
+            Become a Volunteer
+          </a>
+        </div>
+        <!-- Partner -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-100 fade-up" style="transition-delay: 0.2s">
+          <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
+            <i data-lucide="handshake" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-2xl font-bold font-playfair text-gray-900 mb-4">Partner</h3>
+          <p class="text-gray-600 leading-relaxed mb-6">Collaborate with us as an organization, corporation, or institution to amplify our collective impact.</p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-pink-500 flex-shrink-0"></i>
+              Corporate CSR programs
+            </li>
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-pink-500 flex-shrink-0"></i>
+              NGO & government partnerships
+            </li>
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-pink-500 flex-shrink-0"></i>
+              Academic collaborations
+            </li>
+            <li class="flex items-center gap-2 text-sm text-gray-600">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-pink-500 flex-shrink-0"></i>
+              Media & advocacy alliances
+            </li>
+          </ul>
+          <a href="#" class="block text-center gradient-pink text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity shadow-lg">
+            Partner With Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- News & Events Section -->
+  <section id="news" class="py-24 lg:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-16 fade-up">
+        <div>
+          <span class="text-pink-500 font-semibold text-sm uppercase tracking-widest">Latest Updates</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-playfair text-gray-900 mt-4">
+            News & <span class="text-gradient">Events</span>
+          </h2>
+        </div>
+        <a href="#" class="mt-4 sm:mt-0 inline-flex items-center gap-2 text-pink-600 font-semibold hover:text-pink-700 transition-colors">
+          View All <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <article class="group fade-up">
+          <div class="relative rounded-2xl overflow-hidden mb-5 h-56">
+            <img src="http://static.photos/event/640x360/10" alt="Annual Gala" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute top-4 left-4 bg-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Upcoming Event</div>
+          </div>
+          <div class="flex items-center gap-3 text-xs text-gray-500 mb-3">
+            <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> March 15, 2025</span>
+            <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Lagos, Nigeria</span>
+          </div>
+          <h3 class="text-lg font-bold font-playfair text-gray-900 group-hover:text-pink-600 transition-colors mb-2">Annual Grace Gala 2025</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Join us for an evening of celebration, featuring keynote speakers, live performances, and stories of impact from the communities we serve.</p>
+        </article>
+        <article class="group fade-up" style="transition-delay: 0.1s">
+          <div class="relative rounded-2xl overflow-hidden mb-5 h-56">
+            <img src="http://static.photos/education/640x360/22" alt="School Opening" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute top-4 left-4 bg-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full">News</div>
+          </div>
+          <div class="flex items-center gap-3 text-xs text-gray-500 mb-3">
+            <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> February 8, 2025</span>
+            <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Accra, Ghana</span>
+          </div>
+          <h3 class="text-lg font-bold font-playfair text-gray-900 group-hover:text-pink-600 transition-colors mb-2">New Learning Center Opens in Accra</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Our 10th learning center is now operational, providing digital literacy and vocational training to over 200 women and youth annually.</p>
+        </article>
+        <article class="group fade-up" style="transition-delay: 0.2s">
+          <div class="relative rounded-2xl overflow-hidden mb-5 h-56">
+            <img src="http://static.photos/wellness/640x360/18" alt="Health Campaign" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute top-4 left-4 bg-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Campaign</div>
+          </div>
+          <div class="flex items-center gap-3 text-xs text-gray-500 mb-3">
+            <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> January 22, 2025</span>
+            <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Nairobi, Kenya</span>
+          </div>
+          <h3 class="text-lg font-bold font-playfair text-gray-900 group-hover:text-pink-600 transition-colors mb-2">#PinkHeart Health Campaign Launches</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Our new campaign focuses on cervical cancer awareness and screening, aiming to reach 10,000 women across East Africa by 2026.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- CTA Banner -->
+  <section class="relative py-20">
+    <div class="absolute inset-0 gradient-pink"></div>
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-30"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-playfair text-white mb-6">
+        Together, We Can Build a Brighter Future
+      </h2>
+      <p class="text-pink-200 text-lg mb-8 max-w-2xl mx-auto">Join thousands of supporters who believe in the power of compassion and community.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#donate" class="bg-white text-pink-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-pink-50 transition-colors shadow-xl hover:shadow-2xl hover:scale-105 transform">
+          Donate Now
+        </a>
+        <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-pink-600 transition-all">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Tributes -->
+  <section id="tributes" class="py-24 bg-pink-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-up">
+        <!-- <span class="text-pink-500 font-semibold text-sm uppercase tracking-widest">Testimonials</span> -->
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-playfair text-gray-900 mt-4">
+          <span class="text-gradient">Tributes</span>
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-up">
+          <p class="text-gray-600 leading-relaxed mb-6 italic">
+            "Like the speed of light, you vanished from the face of the earth. Your
+            bright light was extinguished far too soon. In your time with us, you left an
+            indelible mark on the lives of everyone you touched. I thank our heavenly
+            Father for giving me a good 20 years, 10 months, and 10 days to spend
+            with you in this life. I know He accepted you into His kingdom at this time
+            because your assignment on earth was done. As you have gotten your
+            wings, fly my dear and be that adorable angel as you were here on earth. 
+            <br><br>
+            I am broken but our bond is unbroken. Your memory will live in my heart
+            forever.  Rest in paradise, my Mommy Mommy!"
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="http://static.photos/people/200x200/10" alt="Adaeze" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <p class="font-semibold text-gray-900">Judith Ngome</p>
+              <p class="text-sm text-pink-500">Mom</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-up" style="transition-delay: 0.1s">
+          <p class="text-gray-600 leading-relaxed mb-6 italic">
+            "My beautiful daughter Ema, God brought you into my life like a blast of
+            extreme joy, it feels like only yesterday. I fell in love with you
+            immediately, and dedicated my life towards making sure that you were
+            well taken care of...I will cherish every memory of you and will love you
+            till the day I die. You always belonged to God, and I was only your
+            temporary custodian. The owner has reclaimed his possession. Who am I to
+            protest. THANK YOU, LORD!!! ALL GLORY BE TO GOD!!!"
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="http://static.photos/people/200x200/25" alt="James" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <p class="font-semibold text-gray-900">Walter Ngome</p>
+              <p class="text-sm text-pink-500">Dad</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-up" style="transition-delay: 0.2s">
+          <img src="../../Media/HomePage/Zuriel-Alice Emambo.jpg" alt="Zuriel Alice Emambo">
+          <p class="text-gray-600 leading-relaxed mb-6 italic text-center">"<a href="https://www.forevermissed.com/zuriel-alice-emambo-ngome/about"><u><b>Click here to see more tributes.</b></u></a>"</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Contact Section -->
+<!-- Contact Section -->
+  <section id="contact" class="py-24 lg:py-32 bg-pink-50 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center mb-16 fade-up">
+        <span class="text-pink-500 font-semibold text-sm uppercase tracking-widest">Get In Touch</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-playfair text-gray-900 mt-4">
+          Contact <span class="text-gradient">Us</span>
+        </h2>
+        <p class="text-gray-500 text-lg mt-4 max-w-2xl mx-auto">We'd love to hear from you. Whether you have a question, suggestion, or want to get involved, reach out today.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        
+        <!-- Contact Info (Left Side) -->
+        <div class="space-y-6 fade-up">
+          <div class="bg-white rounded-2xl p-6 shadow-md flex items-start gap-4">
+            <div class="w-12 h-12 gradient-pink rounded-xl flex items-center justify-center flex-shrink-0">
+              <i data-lucide="map-pin" class="w-5 h-5 text-white"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-1">Address:</h4>
+              <p class="text-gray-500 text-sm">77 Brookvalley crossing, Dallas, GA 30157</p>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-6 shadow-md flex items-start gap-4">
+            <div class="w-12 h-12 gradient-pink rounded-xl flex items-center justify-center flex-shrink-0">
+              <i data-lucide="mail" class="w-5 h-5 text-white"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-1">Email:</h4>
+              <p class="text-gray-500 text-sm">zafoundation56@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-6 shadow-md flex items-start gap-4">
+            <div class="w-12 h-12 gradient-pink rounded-xl flex items-center justify-center flex-shrink-0">
+              <i data-lucide="phone" class="w-5 h-5 text-white"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-1">Phone:</h4>
+              <p class="text-gray-500 text-sm">(770) 870-8606</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-3 pt-2">
+            <a href="#" class="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-pink-100 transition-colors">
+              <i data-lucide="facebook" class="w-4 h-4 text-pink-600"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-pink-100 transition-colors">
+              <i data-lucide="twitter" class="w-4 h-4 text-pink-600"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-pink-100 transition-colors">
+              <i data-lucide="instagram" class="w-4 h-4 text-pink-600"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-pink-100 transition-colors">
+              <i data-lucide="linkedin" class="w-4 h-4 text-pink-600"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-pink-100 transition-colors">
+              <i data-lucide="youtube" class="w-4 h-4 text-pink-600"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Fancy Portrait Video Showcase with Integrated Premium Controls -->
+        <div class="relative w-full max-w-md mx-auto fade-up lg:ml-auto group">
+          <div class="absolute -top-6 -left-6 w-48 h-48 bg-pink-300/30 rounded-full blur-2xl pointer-events-none"></div>
+          <div class="absolute -bottom-8 -right-8 w-64 h-64 bg-rose-200/40 rounded-full blur-3xl pointer-events-none"></div>
+          
+          <!-- Outer Glamour Frame -->
+          <div class="relative p-3 rounded-[2rem] bg-gradient-to-tr from-rose-200 via-pink-100 to-white shadow-xl border border-pink-100">
+            <div class="p-1 rounded-[1.75rem] border border-dashed border-pink-400/40">
+              
+              <!-- Video Window -->
+              <div id="videoContainer" class="relative aspect-[9/16] w-full overflow-hidden rounded-[1.5rem] bg-pink-100 shadow-inner group">
+                <video 
+                  id="contactVideo"
+                  autoplay 
+                  loop 
+                  muted 
+                  playsinline 
+                  class="w-full h-full object-cover select-none cursor-pointer"
+                >
+                  <source src="../../Media/HomePage/Video of Ema.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+
+                <!-- Elegant Glassmorphism Controls Overlay (Fades in on hover/interaction) -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4 text-white">
+                  
+                  <!-- Top Bar: Unmute Toggle -->
+                  <div class="flex justify-end">
+                    <button id="muteBtn" class="p-2 bg-white/20 backdrop-blur-md rounded-full hover:bg-white/30 transition-all active:scale-95" title="Toggle Mute">
+                      <!-- Volume Off Icon (Visible by default) -->
+                      <svg id="muteIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><line x1="22" y1="9" x2="16" y2="15"></line><line x1="16" y1="9" x2="22" y2="15"></line></svg>
+                      <!-- Volume On Icon (Hidden by default) -->
+                      <svg id="unmuteIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+                    </button>
+                  </div>
+
+                  <!-- Bottom Bar: Play/Pause Button & Custom Seek Track -->
+                  <div class="space-y-3 bg-black/20 backdrop-blur-md rounded-2xl p-3 border border-white/10">
+                    <div class="flex items-center gap-3">
+                      <!-- Play/Pause Toggle -->
+                      <button id="playBtn" class="flex-shrink-0 text-pink-200 hover:text-white transition-colors">
+                        <!-- Pause SVG State (Visible during autoplay) -->
+                        <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="block"><rect x="14" y="4" width="4" height="16" rx="1"></rect><rect x="6" y="4" width="4" height="16" rx="1"></rect></svg>
+                        <!-- Play SVG State -->
+                        <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="hidden"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      </button>
+
+                      <!-- Fine-tuned Chic Seek Bar -->
+                      <input 
+                        id="seekBar" 
+                        type="range" 
+                        value="0" 
+                        max="100" 
+                        class="w-full accent-pink-400 h-1 rounded-lg bg-white/30 cursor-pointer appearance-none transition-all outline-none focus:ring-1 focus:ring-pink-300"
+                      />
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Interactive Control Script -->
+     <script src="homeVideo.js"></script>
+  </section>
+
+
+
+  
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-full gradient-pink flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <!-- <span class="text-white font-bold text-lg font-playfair">ZAF</span> -->
+              <img src="../../Media/HomePage/The Zuriel-Alice Foundation logo.png" alt="The Zuriel-Alice Foundation Logo">
+            </div>
+            <div>
+              <span class="text-xl font-bold font-playfair nav-title text-white transition-colors">The Zuriel-Alice Foundation</span>
+              <p class="text-[10px] uppercase tracking-[3px] nav-subtitle text-pink-200 transition-colors"><br>Empowering Lives</p>
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">We believe in the power of compassion and community to create lasting change for women, children, and underserved populations.</p>
+          <div class="flex gap-3">
+            <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition-colors">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition-colors">
+              <i data-lucide="twitter" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition-colors">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition-colors">
+              <i data-lucide="linkedin" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition-colors">
+              <i data-lucide="youtube" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-lg font-playfair mb-6">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="#about" class="text-gray-400 hover:text-pink-400 transition-colors text-sm">About Us</a></li>
+            <li><a href="#programs" class="text-gray-400 hover:text-pink-400 transition-colors text-sm">Our Programs</a></li>
+            <li><a href="#impact" class="text-gray-400 hover:text-pink-400 transition-colors text-sm">Our Impact</a></li>
+            <li><a href="#team" class="text-gray-400 hover:text-pink-400 transition-colors text-sm">Our Team</a></li>
+            <li><a href="#news" class="text-gray-400 hover:text-pink-400 transition-colors text-sm">News & Events</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-pink-400 transition-colors text-sm">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-lg font-playfair mb-6">Programs</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-pink-400 transition-colors text-sm">Girls Education Initiative</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-pink-400 transition-colors text-sm">Maternal Health Program</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-pink-400 transition-colors text-sm">Women in Agriculture</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-pink-400 transition-colors text-sm">Community Health Outreaches</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-pink-400 transition-colors text-sm">Skills Training Center</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-pink-400 transition-colors text-sm">Clean Water Project</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-lg font-playfair mb-6">Contact Info</h4>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-4 h-4 text-pink-500 mt-1 flex-shrink-0"></i>
+              <span class="text-gray-400 text-sm">77 Brookvalley crossing, Dallas, GA 30157</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="mail" class="w-4 h-4 text-pink-500 mt-1 flex-shrink-0"></i>
+              <span class="text-gray-400 text-sm">zafoundation56@gmail.com</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="phone" class="w-4 h-4 text-pink-500 mt-1 flex-shrink-0"></i>
+              <span class="text-gray-400 text-sm">(770) 870-8606</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-gray-500 text-sm">© 2025 The Zuriel-Alice Foundation. All rights reserved.</p>
+        <!--
+        <div class="flex gap-6">
+          <a href="#" class="text-gray-500 hover:text-pink-400 transition-colors text-sm">Privacy Policy</a>
+          <a href="#" class="text-gray-500 hover:text-pink-400 transition-colors text-sm">Terms of Service</a>
+          <a href="#" class="text-gray-500 hover:text-pink-400 transition-colors text-sm">Cookie Policy</a>
+        </div>
+        -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 gradient-pink text-white rounded-full shadow-xl z-40 flex items-center justify-center opacity-0 invisible transition-all hover:scale-110">
+    <i data-lucide="chevron-up" class="w-5 h-5"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="homeScript.js"></script>
+</body>
+</html>
