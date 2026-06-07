@@ -13,7 +13,7 @@
 <body class="bg-white text-gray-800 overflow-x-hidden">
 
   <!-- Navigation -->
-  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
@@ -40,8 +40,11 @@
           <a href="#donate" class="bg-white text-pink-600 px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-pink-50 transition-all shadow-lg hover:shadow-xl">Donate</a>
         </div>
         <!-- Mobile Menu Button -->
-        <button id="mobileMenuBtn" class="lg:hidden text-white hover:text-pink-200 transition-colors">
-          <i data-lucide="menu" class="w-6 h-6"></i>
+        <button id="mobileMenuBtn" class="lg:hidden text-pink-200 hover:text-pink-400 transition-colors p-2 focus:outline-none">
+          <!-- Fallback clean SVG if Lucide script doesn't parse natively -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </button>
       </div>
     </div>
@@ -120,7 +123,7 @@
           <span class="text-gradient">Our Credo</span>
         </h2>
       </div>
-      <div class="grid md:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
         <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-50 fade-up">
           <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
@@ -180,7 +183,7 @@
         <div class="fade-up clearfix"> 
             
             <!-- 2. Added float-left and responsive widths/margins to the photo wrapper -->
-            <div class="relative float-left mr-8 mb-8 w-full sm:w-[400px] lg:w-[450px]">
+            <div class="relative sm:float-left sm:mr-8 mb-12 sm:mb-8 w-full sm:w-[400px] lg:w-[450px]">
             <div class="relative">
                 <img src="../../Media/HomePage/Main photo of Ema.jpg" class="rounded-2xl shadow-2xl w-full h-auto">
                 <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 flex items-center gap-4">
@@ -303,7 +306,7 @@
           Our <span class="text-gradient">Goals</span> & Objectives
         </h2>
       </div>
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
         <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-50 fade-up">
           <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
@@ -334,7 +337,7 @@
         </div>
         <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border border-pink-50 fade-up" style="transition-delay: 0.2s">
           <div class="w-14 h-14 gradient-pink rounded-xl flex items-center justify-center mb-6">
-            <i data-lucide="sparkles" class="w-7 h-7 text-white"></i>
+            <i data-lucide="eye" class="w-7 h-7 text-white"></i>
           </div>
           <h3 class="text-2xl font-bold font-playfair text-gray-900 mb-4">Celebrate the Light and Legacy of Loved Ones</h3>
           <p class="text-gray-600 leading-relaxed">
@@ -636,7 +639,7 @@
           <span class="text-gradient">Tributes</span>
         </h2>
       </div>
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-up">
           <p class="text-gray-600 leading-relaxed mb-6 italic">
@@ -693,7 +696,7 @@
 
   <!-- Contact Section -->
 <!-- Contact Section -->
-  <section id="contact" class="py-24 lg:py-32 bg-pink-50 relative overflow-hidden">
+  <section id="contact" class="py-24 lg:py-32 bg-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="text-center mb-16 fade-up">
